@@ -3,7 +3,7 @@ import jieba.posseg as pseg
 
 def dm01_jieba_base():
 
-    content = "传智教育是一家上市公司，旗下有黑马程序员品牌。我是在黑马这里学习人工智能"
+    content = "我爱北京天安门"
     # 1 精确模式：按照词法句法句意，精确的把词给分开 # 默认方式
     # def cut(self, sentence, cut_all=False, HMM=True, use_paddle=False):
     myobj1 = jieba.cut(sentence=content, cut_all=False)
@@ -37,8 +37,8 @@ def  dm02_jieba_base():
 
 def  dm03_test_load_userdict():
     # 1 不用
-    content = "传智教育是一家上市公司，旗下有黑马程序员品牌。我是在黑马这里学习人工智能"
-    # content = "上市"
+    content ="我爱北京天安门"
+    # content = "北京"
     # 1 精确模式：按照词法句法句意，精确的把词给分开 # 默认方式
     mydata1 = jieba.lcut(sentence=content, cut_all=False)
     print('mydata1-->', mydata1)
